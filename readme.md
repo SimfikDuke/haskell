@@ -1,7 +1,8 @@
 # Haskell  
 <details><summary>Задача 1</summary>  
 <p>  
-```haskell
+
+```haskell  
 -- 1. Реализовать на языке Haskell функцию вычисления суммы элементов списка.
 mysum [] = 0
 mysum lst = head lst + mysum (tail lst)
@@ -14,6 +15,7 @@ print (mysum [1..5])
 </details>  
 <details><summary>Задача 2</summary>  
 <p>  
+
 ```haskell
 -- 2. Реализовать на языке Haskell функцию нахождения максимального элемента списка.
 mymax :: Integral a => [a] -> a
@@ -29,6 +31,7 @@ print (mymax [1, 6, 4])
 </details>  
 <details><summary>Задача 3</summary>  
 <p>  
+
 ```haskell
 -- 3. Реализовать на языке Haskell функцию, удаляющую из исходного списка элементы с четными номерами.
 delsecond [] = []
@@ -47,6 +50,7 @@ print (delsecond [1])
 </details>  
 <details><summary>Задача 4</summary>  
 <p>  
+
 ```haskell
 -- 4. Реализовать на языке Haskell функцию, которая разделяет исходный список из целых чисел на два списка: список положительных чисел и список отрицательных чисел.
 separate x = [(filter (<0) x), (filter (>0) x)]
@@ -59,6 +63,7 @@ print (separate [-10,-9..10])
 </details>  
 <details><summary>Задача 5</summary>  
 <p>  
+
 ```haskell
 -- 5. Реализовать на языке Haskell функцию, заменяющую в исходном списке два подряд идущих одинаковых элемента одним.
 deldubl [] = []
@@ -75,6 +80,7 @@ print (deldubl [1,2,3,3,4,5,5,2])
 </details>  
 <details><summary>Задача 6</summary>  
 <p>  
+
 ```haskell
 -- 6. Реализовать на языке Haskell функцию, которая преобразует исходный список в список, в котором элементы записаны в обратном к исходному порядке.
 rvrs [] = []
@@ -88,6 +94,7 @@ print (rvrs [1,2..10])
 </details>  
 <details><summary>Задача 7</summary>  
 <p>  
+
 ```haskell
 -- 7. Реализовать на языке Haskell функцию, заменяющую в исходном списке все вхождения заданного значения другим.
 m lst from to = map 
@@ -102,6 +109,7 @@ print $ m [1,2,3,2,3] 2 5
 </details>  
 <details><summary>Задача 8</summary>  
 <p>  
+
 ```haskell
 -- 8. Реализовать на языке Haskell функцию которая увеличивает элементы исходного списка на единицу.
 fplus = map (+1)
@@ -113,6 +121,7 @@ print $ fplus [1, 2 .. 10]
 </details>  
 <details><summary>Задача 9</summary>  
 <p>  
+
 ```haskell
 -- 9. Реализовать на языке Haskell функцию которая увеличивает элементы исходного списка в 10 раз.
 fmul = map (*10)
@@ -124,6 +133,7 @@ print $ fmul [1, 2 .. 10]
 </details>  
 <details><summary>Задача 10</summary>  
 <p>  
+
 ```haskell
 -- 10. Реализовать на языке Haskell функцию, вычисляющую скалярное произведение векторов, заданных списками целых чисел.
 sepvector ([]:x) = []
@@ -141,6 +151,7 @@ print (scalarmul [[1, 2, 3], [2, 3, 6], [5, 2, 4]])
 </details>  
 <details><summary>Задача 11</summary>  
 <p>  
+
 ```haskell
 -- 11. Реализовать на языке Haskell функцию, которая, чередуя элементы списков [a, b, ...] и [1, 2, ...], образует новый список [a, 1, b, 2, ...].
 mergelst [] x = if x == [] then x else mergelst x []
@@ -156,6 +167,7 @@ print $ mergelst ["1", "2", "3"] ["a"]
 </details>  
 <details><summary>Задача 12</summary>  
 <p>  
+	
 ```haskell
 -- 12. Реализовать на языке Haskell функцию ПЕРЕСЕЧЕНИЕ, формирующую пересечение двух множеств.
 contain [] x = False

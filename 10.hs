@@ -8,3 +8,4 @@ scalarmul x = sum $ map mul $ sepvector x
 
 main = do
 print (scalarmul [[1, 2, 3], [2, 3, 6], [5, 2, 4]])
+-- 94

@@ -6,3 +6,4 @@ intersect l1 l2 = filter (\x -> contain l2 x) l1
 
 main = do
 print $ intersect [1, 2, 3, 4, 5] [5, 3]
+-- [3,5]

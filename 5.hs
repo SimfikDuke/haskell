@@ -7,3 +7,4 @@ deldubl (x1:x2:y) =
 
 main = do
 print (deldubl [1,2,3,3,4,5,5,2])
+-- [1,2,3,4,5,2]

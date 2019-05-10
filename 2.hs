@@ -1,5 +1,4 @@
 -- 2. Реализовать на языке Haskell функцию нахождения максимального элемента списка.
-
 mymax :: Integral a => [a] -> a
 mymax (x:[]) = x
 mymax (x:xs) = maxof x (mymax xs)
@@ -7,3 +6,4 @@ mymax (x:xs) = maxof x (mymax xs)
 
 main = do
 print (mymax [1, 6, 4])
+-- 6
